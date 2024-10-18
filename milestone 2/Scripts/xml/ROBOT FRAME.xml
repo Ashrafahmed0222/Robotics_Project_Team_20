@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="10/18/24||21:34:34" using="Simscape Multibody Link Version 7.4" from="SolidWorks 31.0.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="ROBOT FRAME" uid="ROBOT FRAME" version="198">
+<AssemblyFile name="ROBOT FRAME.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Waist.step-1" uid="Waist.step-1" entityUid="Waist.step*:*Default">
+<Transform>
+<Rotation>-0.96066499332479993 -0.18661906851713095 0.20566014165622956 -0.25299113674509793 0.89352498343518028 -0.37095631643845051 -0.11453495243236968 -0.40839494027590384 -0.9055911425297597</Rotation>
+<Translation>0.10461971625701147 0.031167608590289556 0.074718427167901252</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.64313725490196072" g="0.61568627450980395" b="0.59999999999999998" a="1"/>
+<Diffuse r="0.45019607843137249" g="0.43098039215686273" b="0.41999999999999998" a="1"/>
+<Specular r="0.03215686274509804" g="0.0307843137254902" b="0.029999999999999999" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Arm 01.step-1" uid="Arm 01.step-1" entityUid="Arm 01.step*:*Default">
+<Transform>
+<Rotation>0.19121634135782203 -0.20139285339354357 -0.96066499332479882 -0.9016751870760964 0.3506812537614577 -0.25299113674510137 0.38783781121625521 0.91458382713794939 -0.11453495243237236</Rotation>
+<Translation>0.11172607048521953 0.076923235973475529 0.072949587900442051</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.29803921568627451" g="0.29803921568627451" b="0.29803921568627451" a="1"/>
+<Diffuse r="0.20862745098039215" g="0.20862745098039215" b="0.20862745098039215" a="1"/>
+<Specular r="0.014901960784313726" g="0.014901960784313726" b="0.014901960784313726" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Base.step-1" uid="Base.step-1" grounded="true" entityUid="Base.step*:*Default">
+<Transform>
+<Rotation>-0.17483847598504809 -0.96674962145377852 -0.18661906851713106 -0.43926800480102601 -0.093041517266686205 0.89352498343517994 -0.88117826078118355 0.23819833224371834 -0.40839494027590451</Rotation>
+<Translation>0.11535031269674879 -0.020210077957233223 0.098201136233767333</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.29803921568627451" g="0.29803921568627451" b="0.29803921568627451" a="1"/>
+<Diffuse r="0.20862745098039215" g="0.20862745098039215" b="0.20862745098039215" a="1"/>
+<Specular r="0.014901960784313726" g="0.014901960784313726" b="0.014901960784313726" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="GRIPPER ASSEMBLED-1" uid="GRIPPER ASSEMBLED-1" entityUid="GRIPPER ASSEMBLED" rigid="true">
+<Transform>
+<Rotation>-0.97718934681679059 -0.049722499532963156 -0.20646707608712986 -0.060432359842732507 -0.86690660511745521 0.49479376298369737 -0.20359005464809107 0.49598448669683537 0.84412705122183107</Rotation>
+<Translation>0.099951886188317504 0.17703225692976562 0.26085499043571303</Translation>
+</Transform>
+<Instance name="Part 2 gear 2.step-1" uid="Part 2 gear 2.step-1" entityUid="Part 2 gear 2.step*:*Default">
+<Transform>
+<Rotation>-0.64122337565456244 0.76735427444835924 -3.956137430186687e-16 1.1102230246251567e-15 1.4432899320127037e-15 1 0.76735427444835935 0.64122337565456244 -1.77740562579053e-15</Rotation>
+<Translation>0.036222900427974519 0.047271826066175526 0.063455966640256101</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper link.step-1" uid="Gripper link.step-1" entityUid="Gripper link.step*:*Default">
+<Transform>
+<Rotation>0.72896696736111755 1.7438791886923094e-16 -0.68454887370905471 -1.3877787807814454e-16 1 1.0696596366166284e-16 0.68454887370905471 0 0.72896696736111755</Rotation>
+<Translation>0.054222900428020943 0.045271826066175636 0.083455966640226142</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper link.step-4" uid="Gripper link.step-4" entityUid="Gripper link.step*:*Default">
+<Transform>
+<Rotation>0.63155998627830112 -1.2448103733087598e-16 0.77532701728506292 1.1102230246251568e-16 1 0 -0.77532701728506292 0 0.63155998627830112</Rotation>
+<Translation>0.0246445408533498 0.036271826066175628 0.10749110417609148</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper_Base.step-1" uid="Gripper_Base.step-1" grounded="true" entityUid="Gripper_Base.step*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.061222900427977331 0.040021826066175603 0.065955966640254493</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper link.step-2" uid="Gripper link.step-2" entityUid="Gripper link.step*:*Default">
+<Transform>
+<Rotation>0.63155998627828258 -1.2448103733087339e-16 0.77532701728507791 1.1102230246251565e-16 1 0 -0.77532701728507791 0 0.63155998627828258</Rotation>
+<Translation>0.024644540853352354 0.045271826066175636 0.10749110417609092</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper.step-2" uid="Gripper.step-2" entityUid="Gripper.step*:*Default">
+<Transform>
+<Rotation>0.36996632848911448 4.4408920985006262e-16 0.92904516347930288 1.6653345369377348e-15 -1 -1.9428902930940239e-16 0.92904516347930266 1.7763568394002505e-15 -0.36996632848911443</Rotation>
+<Translation>0.016505281626647689 0.045021826066175608 0.087052110579533437</Translation>
+</Transform>
+</Instance>
+<Instance name="Part 1 gear 2.step-1" uid="Part 1 gear 2.step-1" entityUid="Part 1 gear 2.step*:*Default">
+<Transform>
+<Rotation>0.72957244236483998 -0.68390353950085847 0 -1.1379786002407855e-15 -1.27675647831893e-15 -1 0.68390353950085836 0.72957244236483976 -1.609823385706477e-15</Rotation>
+<Translation>0.063122900428013023 0.047271826066175637 0.063455966640218964</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper.step-1" uid="Gripper.step-1" entityUid="Gripper.step*:*Default">
+<Transform>
+<Rotation>-0.39710802793323519 -1.0659435791696795e-16 -0.91777187478750788 -1.6653345369377353e-16 1 0 0.91777187478750788 1.353320818000813e-16 -0.39710802793323519</Rotation>
+<Translation>0.085557253030652161 0.040521826066175631 0.084486000479951084</Translation>
+</Transform>
+</Instance>
+<Instance name="Gripper link.step-3" uid="Gripper link.step-3" entityUid="Gripper link.step*:*Default">
+<Transform>
+<Rotation>-0.72896696736111266 1.1610032291098287e-16 0.68454887370905981 0 1 0 -0.68454887370905981 0 -0.72896696736111266</Rotation>
+<Translation>0.076820876416214837 0.0362718260661756 0.10467698172520734</Translation>
+</Transform>
+</Instance>
+<Instance name="Servo motor micro 9g.step-1" uid="Servo motor micro 9g.step-1" entityUid="Servo motor micro 9g.step*:*Default">
+<Transform>
+<Rotation>1 0 0 0 9.9920072216264108e-16 1 0 -1 9.9920072216264108e-16</Rotation>
+<Translation>0.068222900427977323 0.01627182606617561 0.063455966640254435</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Arm 02.step-1" uid="Arm 02.step-1" entityUid="Arm 02.step*:*Default">
+<Transform>
+<Rotation>-0.21071396280690188 -0.18089332900489993 -0.96066499332479927 0.39538589293484477 0.88298668189080698 -0.25299113674510038 0.89401880379907395 -0.43314215117555549 -0.11453495243237022</Rotation>
+<Translation>0.058909855018631226 0.12712824296863831 0.21122412464502291</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.49803921568627452" g="0.49803921568627452" b="0.49803921568627452" a="1"/>
+<Diffuse r="0.34862745098039216" g="0.34862745098039216" b="0.34862745098039216" a="1"/>
+<Specular r="0.024901960784313726" g="0.024901960784313726" b="0.024901960784313726" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Arm 03.step-1" uid="Arm 03.step-1" entityUid="Arm 03.step*:*Default">
+<Transform>
+<Rotation>-0.026468969492333828 -0.21071396280690172 -0.97718934681679026 -0.91652491812931736 0.39538589293484699 -0.060432359842733839 0.39910082448181172 0.89401880379907295 -0.20359005464809124</Rotation>
+<Translation>0.040692993354413995 0.14805468372278055 0.2605378899013634</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.29803921568627451" g="0.29803921568627451" b="0.29803921568627451" a="1"/>
+<Diffuse r="0.20862745098039215" g="0.20862745098039215" b="0.20862745098039215" a="1"/>
+<Specular r="0.014901960784313726" g="0.014901960784313726" b="0.014901960784313726" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base.step-1</Uid>
+</InstancePath>
+<Position>0 0 0.0040000000000000036</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Waist.step-1</Uid>
+</InstancePath>
+<Position>0 0.0040000000000000036 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Waist.step-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base.step-1</Uid>
+</InstancePath>
+<Position>0 0 0.055999999999999994</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Waist.step-1</Uid>
+</InstancePath>
+<Position>0.017999999999999988 0.040279999999999989 -0.013910000000000013</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm 01.step-1</Uid>
+</InstancePath>
+<Position>0 0 0.021000000000000005</Position>
+<Axis>1.457167719820518e-16 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Waist.step-1</Uid>
+</InstancePath>
+<Position>0.0040000000000000174 0.011860000000000002 -0.00066294836961609815</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm 01.step-1</Uid>
+</InstancePath>
+<Position>0 0 0.021000000000000005</Position>
+<Axis>-1.457167719820518e-16 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm 01.step-1</Uid>
+</InstancePath>
+<Position>0 0.11999999999999998 0.021000000000000005</Position>
+<Axis>1.457167719820518e-16 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm 02.step-1</Uid>
+</InstancePath>
+<Position>-0.034750000000000003 0 0.0019999999999999879</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm 02.step-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm 01.step-1</Uid>
+</InstancePath>
+<Position>0 0 0.021000000000000005</Position>
+<Axis>-1.457167719820518e-16 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm 02.step-1</Uid>
+</InstancePath>
+<Position>0.026615223689149786 0.005300000000000013 0.005499999999999991</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm 03.step-1</Uid>
+</InstancePath>
+<Position>-0.0050000000000000044 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm 03.step-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm 02.step-1</Uid>
+</InstancePath>
+<Position>0.055000000000000021 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm 03.step-1</Uid>
+</InstancePath>
+<Position>0 0.028000000000000025 -0.013999999999999999</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>GRIPPER ASSEMBLED-1</Uid>
+<Uid>Gripper_Base.step-1</Uid>
+</InstancePath>
+<Position>-0.029999999999999985 -0.0089999999999999525 -0.04049999999999998</Position>
+<Axis>1.0000000000000002 -1.2490009027033011e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>GRIPPER ASSEMBLED-1</Uid>
+<Uid>Gripper_Base.step-1</Uid>
+</InstancePath>
+<Position>-0.015999999999999986 0.0050000000000000044 -0.054499999999999993</Position>
+<Axis>1.0000000000000002 -1.2490009027033011e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm 03.step-1</Uid>
+</InstancePath>
+<Position>-0.016500000000000001 0.045999999999999985 -0.013999999999999999</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="GRIPPER ASSEMBLED" uid="GRIPPER ASSEMBLED" version="224">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="GRIPPER ASSEMBLED.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="Arm 01.step" uid="Arm 01.step*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arm 01.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.06406206295744972</Mass>
+<CenterOfMass>1.2850336070086672e-07 0.059999995910407222 0.013228587043168883</CenterOfMass>
+<Inertia>0.0001037548620862218 9.2286400109436346e-06 0.00010862500499605751 -4.5872647382648273e-12 1.0835664496579738e-10 3.5388609630252521e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Arm 01.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Arm 02.step" uid="Arm 02.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arm 02.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.047098178588760371</Mass>
+<CenterOfMass>0.0069606759410952256 -3.1659233000731735e-05 0.0057199627539258587</CenterOfMass>
+<Inertia>8.7226811414997541e-06 5.1401247559842788e-05 5.4664812040540974e-05 -1.836600701902415e-10 4.0364656567478723e-07 6.9701592326244719e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Arm 02.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Arm 03.step" uid="Arm 03.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arm 03.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.016470381150826493</Mass>
+<CenterOfMass>4.5921163043078539e-05 0.017807989368532062 -0.0052709429457633633</CenterOfMass>
+<Inertia>3.8998418373649572e-06 2.6089689146827611e-06 5.0078047933547658e-06 5.7715361400521045e-07 -3.9834538752910794e-09 1.157658948467327e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Arm 03.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Base.step" uid="Base.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Base.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.094594871753327731</Mass>
+<CenterOfMass>-8.547042720581558e-09 0.0010969923629518372 0.022106105445279807</CenterOfMass>
+<Inertia>0.00013483017270186269 0.00012885961364117937 0.0002056402545224431 3.7593134126738682e-06 -2.5243610462509074e-11 6.1695010862655926e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Base.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Gripper link.step" uid="Gripper link.step*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Gripper link.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00079876241318469041</Mass>
+<CenterOfMass>0.015499999999999998 0.002 0</CenterOfMass>
+<Inertia>3.632504223630091e-09 1.044242256596035e-07 1.0292175453779925e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Gripper link.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Gripper.step" uid="Gripper.step*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Gripper.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0025546457279845918</Mass>
+<CenterOfMass>0.025526144700867347 0.0022499977309997287 -0.0033670517382186887</CenterOfMass>
+<Inertia>6.0941322956612587e-08 8.1046094036408747e-07 7.5814168127128622e-07 8.4417642633935039e-15 1.5526783993080637e-07 -2.3354106113962872e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Gripper.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Gripper_Base.step" uid="Gripper_Base.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Gripper_Base.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.016040641878349766</Mass>
+<CenterOfMass>-0.011842414288125191 -0.0025596720755143563 -0.015572120296144533</CenterOfMass>
+<Inertia>7.2576835835001359e-06 9.0081674489802129e-06 3.3009851516615754e-06 -1.3407724228025401e-06 -1.785944482859851e-06 -4.0493127016338288e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Gripper_Base.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.49803921568627452" g="0.49803921568627452" b="0.49803921568627452" a="1"/>
+<Diffuse r="0.34862745098039216" g="0.34862745098039216" b="0.34862745098039216" a="1"/>
+<Specular r="0.024901960784313726" g="0.024901960784313726" b="0.024901960784313726" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part 1 gear 2.step" uid="Part 1 gear 2.step*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part 1 gear 2.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0025818082333029096</Mass>
+<CenterOfMass>0.005551202562305884 0.00058171571194625652 0</CenterOfMass>
+<Inertia>9.0015147896009378e-08 3.6868828636248381e-07 4.5181861230301881e-07 0 0 8.3372313030912531e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Part 1 gear 2.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part 2 gear 2.step" uid="Part 2 gear 2.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part 2 gear 2.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0026581803507116785</Mass>
+<CenterOfMass>0.0053917110914827072 0.00056500245144856678 0</CenterOfMass>
+<Inertia>9.0234789878071744e-08 3.7202878646128246e-07 4.551750954041231e-07 0 0 8.0976945057579821e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Part 2 gear 2.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Servo motor micro 9g.step" uid="Servo motor micro 9g.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Servo motor micro 9g.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0071774121234647612</Mass>
+<CenterOfMass>-0.00042158840740102023 0 0.012597663553430189</CenterOfMass>
+<Inertia>4.6617952362535852e-07 7.1738975405291118e-07 4.305080413747324e-07 0 3.5685885277788789e-08 0</Inertia>
+</MassProperties>
+<GeometryFile name="Servo motor micro 9g.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Waist.step" uid="Waist.step*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Waist.step.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.073648170370864199</Mass>
+<CenterOfMass>0.0074945894541905205 0.019383339454262127 -0.0014292884892754282</CenterOfMass>
+<Inertia>6.7953672140801572e-05 6.0133448032106263e-05 5.0282483128982849e-05 6.7306571206600717e-06 2.5438792023150852e-07 -6.430049350352325e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Waist.step_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Diffuse r="0.62745098039215685" g="0.62745098039215685" b="0.62745098039215685" a="1"/>
+<Specular r="0.31372549019607843" g="0.31372549019607843" b="0.31372549019607843" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

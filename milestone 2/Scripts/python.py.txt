@@ -1,0 +1,38 @@
+def sysCall_init():
+    sim = require('sim')
+    self.objectHandle =sim.getObject("/q3")
+    
+    self.required_duration = 5
+    #sim.setJointPosition(objectHandle,90*3.14/180)
+    # do some initialization here
+    #
+    # Instead of using globals, you can do e.g.:
+    # self.myVariable = 21000000
+
+def sysCall_actuation():
+    curr_time = sim.getSimulationTime()
+    if curr_time < self.required_duration :
+        new_pos = (curr_time/self.required_duration)*110*3.14/180
+        sim.setJointTargetPosition(self.objectHandle,new_pos)
+       
+    else:
+        sim.setJointTargetPosition(self.objectHandle,110*3.14/180)
+        
+        EE_handle = sim.getObject("/EE_respondable")
+        base_handle = sim.getObject("../base_link1_visual")
+        EE_pos = sim.getObjectPosition(EE_handle,base_handle)
+        print(EE_pos)
+        
+    # put your actuation code here
+    pass
+
+def sysCall_sensing():
+    # put your sensing code here
+    pass
+
+def sysCall_cleanup():
+    # do some clean-up here
+    
+    pass
+
+# See the user manual or the available code snippets for additional callback functions and details
