@@ -64,3 +64,53 @@ This folder includes narrated videos of simulations and hardware fabrication:
 
 __________________________________________________________________________________________________________
 
+
+# Milestone 3
+
+This repository contains the implementation and evaluation of **Inverse Position Kinematics**, **Forward Velocity Kinematics**, and **Inverse Velocity Kinematics** for a robotic arm. The project utilizes MATLAB, Python, Simulink, and CoppeliaSim, with hardware testing conducted through Arduino. 
+
+## Project Overview
+
+Milestone 3 tasks are focused on computing and validating both positional and velocity kinematics of the robotic arm, enabling robust simulations and hardware testing.
+
+### Contents
+1. **Inverse Position Kinematics**
+   - **Numerical Approach (Newton-Raphson)**
+   - Implemented in MATLAB and Python.
+   - Functions:
+     - `J_inv = inverse_jacobian_matrix(q)`: Computes the inverse of the Jacobian matrix.
+     - `q = inverse_kinematics_func(q0, X)`: Returns joint angles to achieve the target end-effector position.
+  
+2. **Forward Velocity Kinematics**
+   - Computes the Jacobian matrix, `J = jacobian_matrix(q)`, to relate joint velocities to end-effector velocities.
+   - `V_F = forward_velocity_kinematics(q, q_dot)`: Provides end-effector velocity for given joint angles and velocities.
+
+3. **Inverse Velocity Kinematics**
+   - Uses the inverse Jacobian to relate end-effector velocities to joint velocities.
+   - `q_dot = inverse_velocity_kinematics(q, V_F)`: Returns joint velocities needed to achieve a target end-effector velocity.
+
+4. **Simulink Integration**
+   - MATLAB functions are integrated into Simulink for simulating forward and inverse kinematics.
+   - Results are validated with Simscape by comparing end-effector position and velocity against transform sensor block output.
+
+5. **Python and CoppeliaSim Integration**
+   - Python-based forward and inverse kinematics functions are used to simulate the robotic arm in CoppeliaSim.
+   - Outputs are verified by comparing sensed end-effector positions and velocities with Python calculations.
+
+6. **Hardware Fabrication and Testing**
+   - Completed hardware fabrication of the robotic arm, including open-loop testing of motors and sensors with Arduino.
+   - Ensures the structure and circuitry are organized, with the robotic arm base fixed at the first joint.
+
+### Video Demonstrations
+
+- **Forward Position Kinematics and Inverse Position Kinematics Validation in Simulink and Simscape**  
+ 
+  
+- **Forward Velocity Kinematics and Inverse Velocity Kinematics Validation in Simulink and Simscape**  
+
+
+- **Hardware Testing **  
+
+
+
+
