@@ -112,5 +112,71 @@ Milestone 3 tasks are focused on computing and validating both positional and ve
 - **Hardware Testing **  
 
 
+__________________________________________________________________________________________________________
+
+
+# Milestone 4
+
+This repository contains the implementation and validation of **two joint space trajectories** for a selected service robotic application. The tasks include validating the trajectories on simulation environments (Simscape Multibody and CoppeliaSim) and the developed hardware. The project also involves sending the joint angles to an Arduino to execute the trajectories on the hardware.
+
+---
+
+Contents
+
+### 1. Trajectory Design and Validation
+- **TWO Trajectories**: Joint space trajectories specifically designed for the selected service robotic application.
+- **Validation**:
+  - Simscape Multibody
+  - CoppeliaSim
+  - Hardware implementation
+
+### 2. Files Included
+#### Word Document
+- **Trajectory Equations**:
+  - Detailed mathematical equations for the developed trajectories.
+- **Trajectory Visualization**:
+  - Drawn diagrams to visualize the robot's desired motion.
+- **Validation Comments**:
+  - Observations and insights on trajectory validation across Simscape Multibody, CoppeliaSim, and hardware.
+
+#### Simulink and Simscape
+- `Simulink.slx`: Simulink model of the robotic system actuated by the trajectory inputs.
+
+#### Python Code
+- `Python.py`: Python scripts for trajectory generation, simulation, and Arduino interfacing.
+
+#### Videos
+- **Video1.mp4**: Hardware validation:
+  - Demonstrates the fabricated hardware executing the chosen trajectories.
+  - Includes comments on hardware performance.
+- **Video2.mp4**: Simscape Validation:
+  - Simulink and Simscape Multibody simulation showing trajectory validation.
+  - Includes comments on performance.
+- **Video3.mp4**: CoppeliaSim Validation:
+  - CoppeliaSim simulation showing trajectory validation.
+  - Includes comments on performance.
+
+---
+
+## Implementation Steps
+1. **Trajectory Design**:
+   - Define joint space trajectories using mathematical equations.
+   - Create visualizations for understanding and communication.
+
+2. **Simulation Validation**:
+   - Validate trajectories in:
+     - **Simscape Multibody** (via Simulink)
+     - **CoppeliaSim** (imported trajectory motion).
+
+3. **Hardware Validation**:
+   - Use Arduino to actuate the robotic hardware with joint angles derived from the designed trajectories.
+
+4. **Documentation**:
+   - Prepare detailed reports on the trajectory equations, design, and validation.
+
+5. **Video Demonstrations**:
+   - Record and narrate videos showcasing the validation in hardware, Simscape, and CoppeliaSim.
+
+
 
 
