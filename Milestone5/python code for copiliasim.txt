@@ -1,0 +1,290 @@
+import time  # Import the time module for delay
+import numpy as np
+def sysCall_init():
+    sim = require('sim')
+    
+    # Get the handles for each joint
+    self.objectiveHandle_1 = sim.getObject("../q1")
+    self.objectiveHandle_2 = sim.getObject("../q2")
+    self.objectiveHandle_3= sim.getObject("../q3")
+    self.objectiveHandle_4 = sim.getObject("../q4")
+   # self.target_position = -90 *(3.14/180)
+    self.required_duration = 5
+    self.u = 0
+
+def sysCall_actuation():
+   
+    
+   # for u in np.arange(0, 5 , 0.1):  # 5.1 ensures 5 is included
+    
+    # Define your desired joint positions based on `pos`
+    self.u += 0.1 
+    if self.u <= 5:
+        
+        curr_time = sim.getSimulationTime()
+        self.target_position_1 = 10.8*self.u**2 - 1.44*self.u**3
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= -1*self.target_position_1 
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+    if self.u >= 5 and self.u <= 10:
+        i = self.u-5
+        curr_time = sim.getSimulationTime()
+        self.target_position_1 = 90-10.8*i**2 + 1.44*i**3
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 90-6.48*i**2+0.864*i**3
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 5.76*i**2-0.768*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+            
+    if self.u > 10 and self.u <= 15:
+        i = self.u-10
+        curr_time = sim.getSimulationTime()
+        self.target_position_1 = 10.8*i**2 - 1.44*i**3
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2 = 36
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3 = 48-3.36*i**2+0.448*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+    if self.u > 15 and self.u <= 18:
+        i = self.u-15
+        curr_time = sim.getSimulationTime()
+        self.target_position_1 = 90
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2 = 36
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3 = 20+9.3333*i**2-2.0741*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+
+    if self.u > 18 and self.u <= 21:
+        i = self.u-18
+        curr_time = sim.getSimulationTime()
+        self.target_position_1 = 90
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 36+18*i**2-4*i**3
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 48-16*i**2+3.5556**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+            
+    if self.u > 21 and self.u <= 24:
+        i = self.u-21
+        curr_time = sim.getSimulationTime()
+        self.target_position_1 = 90
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 90-18*i**2+4*i**3
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 16*i**2-3.5556*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+    if self.u > 24 and self.u <= 29:
+        i = self.u-24
+        curr_time = sim.getSimulationTime()
+        self.target_position_1= 90+10.8*i**2-1.44*i**3
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 36
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 48-3.36*i**2+0.448*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+    if self.u > 29 and self.u <= 32:
+        i = self.u-29
+        curr_time = sim.getSimulationTime()
+        self.target_position_1= 180
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 36
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 20+9.3333*i**2-2.0741*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+    if self.u > 32 and self.u <= 35:
+        i = self.u-32
+        curr_time = sim.getSimulationTime()
+        self.target_position_1= 180
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 36+18*i**2-4*i**3
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 48-16*i**2+3.5556*i**3
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+
+    if self.u > 35 and self.u <= 40:
+        i = self.u-35
+        curr_time = sim.getSimulationTime()
+        self.target_position_1= 180-10.8*i**2+1.44*i**3
+        self.target_position_1 = self.target_position_1 * (3.14 / 180)
+        self.target_position_2= 90
+        self.target_position_2 = self.target_position_2 * (-3.14 / 180)
+        self.target_position_3= 0
+        self.target_position_3 = self.target_position_3 * (3.14 / 180)
+        # Set each joint to the new position
+        if curr_time < self.required_duration:
+            new_position1 = (curr_time/self.required_duration)*self.target_position_1
+            sim.setJointTargetPosition(self.objectiveHandle_1, new_position1)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_1, self.target_position_1)
+        if curr_time < self.required_duration:
+            new_position2 = (curr_time/self.required_duration)*self.target_position_2
+            sim.setJointTargetPosition(self.objectiveHandle_2, new_position2)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_2, self.target_position_2)
+
+        if curr_time < self.required_duration:
+            new_position3 = (curr_time/self.required_duration)*self.target_position_3
+            sim.setJointTargetPosition(self.objectiveHandle_3, new_position3)
+        else:
+            sim.setJointTargetPosition(self.objectiveHandle_3, self.target_position_3)
+
+
+
+        # Add a delay if needed (e.g., to simulate smooth movement)
+        #time.sleep(0.1)  # 0.1 second delay between iterations
+
+   
+    pass
+    
+def sysCall_sensing():
+    pass  
+def sysCall_cleanup():
+    pass
