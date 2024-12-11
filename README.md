@@ -11,6 +11,8 @@ This milestone includes the following:
 - **List of components**.
 - **Video showing downloaded Simscape Multibody and Coppeliasim software**.
 __________________________________________________________________________________________________________
+__________________________________________________________________________________________________________
+__________________________________________________________________________________________________________
 
 # Milestone 2
 
@@ -63,7 +65,8 @@ This folder includes narrated videos of simulations and hardware fabrication:
 
 
 __________________________________________________________________________________________________________
-
+__________________________________________________________________________________________________________
+__________________________________________________________________________________________________________
 
 # Milestone 3
 
@@ -112,6 +115,8 @@ Milestone 3 tasks are focused on computing and validating both positional and ve
 - **Hardware Testing **  
 
 
+__________________________________________________________________________________________________________
+__________________________________________________________________________________________________________
 __________________________________________________________________________________________________________
 
 
@@ -176,6 +181,53 @@ Contents
 
 5. **Video Demonstrations**:
    - Record and narrate videos showcasing the validation in hardware, Simscape, and CoppeliaSim.
+
+
+__________________________________________________________________________________________________________
+__________________________________________________________________________________________________________
+__________________________________________________________________________________________________________
+
+
+# Milestone 5
+
+This repository contains all the necessary files, simulations, and documentation related to the project. Below is a detailed breakdown of the repository contents:
+
+### 1. MATLAB/Simulink Files
+- **Folder:** `MATLAB_Simulink`
+  - `.m` files: MATLAB scripts for system control and simulation.
+  - `.slx` files: Simulink models for system simulation.
+  - Simscape Multibody model: Included within the `.slx` files.
+
+### 2. Arduino Files
+- **Folder:** `Arduino_Codes`
+  - `.ino` files: Arduino sketches for hardware motion control.
+
+### 3. Python Files
+- **Folder:** `Python_CoppeliaSim`
+  - `.py` files: Python scripts for system control and integration with CoppeliaSim.
+  - CoppeliaSim model: Included as part of the scripts.
+
+### 4. Documentation
+  - Word/PDF file: Detailed report (6-8 pages) including:
+    - Introduction.
+    - Methodology.
+    - Results.
+    - Conclusions.
+    - Models and trajectories of the system.
+    - Simscape and CoppeliaSim simulations.
+    - Final hardware setup and connections.
+    - Results and overall setup connecting both arms together.
+    - Outcomes and limitations.
+    - Links/QR codes for videos showcasing the system.
+
+### 5. Presentation
+
+### 6. Media File
+  - **Videos:**
+    - `Video1.mp4`: Demonstration of the fabricated hardware, common stand of the two robots, and trajectory validation.
+    - `Video2.mp4`: Simscape simulation demonstrating trajectory validation.
+    - `Video3.mp4`: CoppeliaSim simulation demonstrating trajectory validation.
+  - **Photos:** Pictures of the team:).
 
 
 
